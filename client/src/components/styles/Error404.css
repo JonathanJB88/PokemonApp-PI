@@ -1,0 +1,71 @@
+.container-error {
+  display: flex;
+  flex-direction: column;
+}
+
+.errorImage {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.divErrorButton {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.errorButton {
+  background-color: #f2bf27;
+  border: 0 solid #0d0d0d;
+  box-sizing: border-box;
+  color: #0d0d0d;
+  display: flex;
+  font-family: fantasy;
+  font-size: small;
+  text-decoration: none;
+  font-weight: 50;
+  justify-content: center;
+  line-height: 1.3rem;
+  padding: 0.75rem 1rem;
+  position: relative;
+  text-align: center;
+  width: auto;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.errorButton:focus {
+  outline: 0;
+}
+
+.errorButton:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #0d0d0d;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.errorButton:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+  .errorImage {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .errorImage {
+    margin-top: 50%;
+  }
+}

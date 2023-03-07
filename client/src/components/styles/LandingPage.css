@@ -1,0 +1,106 @@
+.background {
+  background-image: url("../Gifs/Pika_LandigPage.gif");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo-landing {
+  width: 400px;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #f2bf27;
+  border: 0 solid #f2f2f2;
+  box-sizing: border-box;
+  color: #0d0d0d;
+  display: flex;
+  font-family: fantasy;
+  font-size: medium;
+  text-decoration: none;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 100px;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #f2f2f2;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+  padding-left: 15px;
+}
+
+.byJon {
+  color: #f2bf27;
+  font-family: fantasy;
+  letter-spacing: 3px;
+}
+
+.foot-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 27%;
+  height: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .logo-landing {
+    width: 200px;
+    margin-top: 30px;
+  }
+
+  .foot-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1px;
+    margin-right: 30px;
+    margin-top: 75%;
+    height: 100%;
+  }
+
+  .byJon {
+    padding-top: 10px;
+    -webkit-text-stroke: 1px #0d0d0d;
+  }
+}
